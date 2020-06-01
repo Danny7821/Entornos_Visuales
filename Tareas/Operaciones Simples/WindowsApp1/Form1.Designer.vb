@@ -27,15 +27,11 @@ Partial Class Form1
         Me.txtvalor1 = New System.Windows.Forms.TextBox()
         Me.txtvalor2 = New System.Windows.Forms.TextBox()
         Me.btlimpiar = New System.Windows.Forms.Button()
-        Me.Checksuma = New System.Windows.Forms.CheckBox()
-        Me.checkresta = New System.Windows.Forms.CheckBox()
-        Me.Checkdiv = New System.Windows.Forms.CheckBox()
-        Me.Checkmulti = New System.Windows.Forms.CheckBox()
-        Me.txtresultado = New System.Windows.Forms.TextBox()
-        Me.txtraiz = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtpotencia = New System.Windows.Forms.TextBox()
+        Me.txtsuma = New System.Windows.Forms.TextBox()
+        Me.txtresta = New System.Windows.Forms.TextBox()
+        Me.txtmulti = New System.Windows.Forms.TextBox()
+        Me.txtdivi = New System.Windows.Forms.TextBox()
+        Me.btncalcular = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label5
@@ -74,106 +70,60 @@ Partial Class Form1
         '
         'btlimpiar
         '
-        Me.btlimpiar.Location = New System.Drawing.Point(16, 228)
+        Me.btlimpiar.Location = New System.Drawing.Point(114, 230)
         Me.btlimpiar.Name = "btlimpiar"
         Me.btlimpiar.Size = New System.Drawing.Size(75, 23)
         Me.btlimpiar.TabIndex = 13
         Me.btlimpiar.Text = "Limpiar"
         Me.btlimpiar.UseVisualStyleBackColor = True
         '
-        'Checksuma
+        'txtsuma
         '
-        Me.Checksuma.AutoSize = True
-        Me.Checksuma.Location = New System.Drawing.Point(37, 125)
-        Me.Checksuma.Name = "Checksuma"
-        Me.Checksuma.Size = New System.Drawing.Size(53, 17)
-        Me.Checksuma.TabIndex = 14
-        Me.Checksuma.Text = "Suma"
-        Me.Checksuma.UseVisualStyleBackColor = True
+        Me.txtsuma.Location = New System.Drawing.Point(12, 139)
+        Me.txtsuma.Name = "txtsuma"
+        Me.txtsuma.Size = New System.Drawing.Size(100, 20)
+        Me.txtsuma.TabIndex = 18
         '
-        'checkresta
+        'txtresta
         '
-        Me.checkresta.AutoSize = True
-        Me.checkresta.Location = New System.Drawing.Point(37, 149)
-        Me.checkresta.Name = "checkresta"
-        Me.checkresta.Size = New System.Drawing.Size(54, 17)
-        Me.checkresta.TabIndex = 15
-        Me.checkresta.Text = "Resta"
-        Me.checkresta.UseVisualStyleBackColor = True
+        Me.txtresta.Location = New System.Drawing.Point(145, 139)
+        Me.txtresta.Name = "txtresta"
+        Me.txtresta.Size = New System.Drawing.Size(100, 20)
+        Me.txtresta.TabIndex = 19
         '
-        'Checkdiv
+        'txtmulti
         '
-        Me.Checkdiv.AutoSize = True
-        Me.Checkdiv.Location = New System.Drawing.Point(37, 173)
-        Me.Checkdiv.Name = "Checkdiv"
-        Me.Checkdiv.Size = New System.Drawing.Size(42, 17)
-        Me.Checkdiv.TabIndex = 16
-        Me.Checkdiv.Text = "Div"
-        Me.Checkdiv.UseVisualStyleBackColor = True
+        Me.txtmulti.Location = New System.Drawing.Point(12, 182)
+        Me.txtmulti.Name = "txtmulti"
+        Me.txtmulti.Size = New System.Drawing.Size(100, 20)
+        Me.txtmulti.TabIndex = 20
         '
-        'Checkmulti
+        'txtdivi
         '
-        Me.Checkmulti.AutoSize = True
-        Me.Checkmulti.Location = New System.Drawing.Point(37, 197)
-        Me.Checkmulti.Name = "Checkmulti"
-        Me.Checkmulti.Size = New System.Drawing.Size(47, 17)
-        Me.Checkmulti.TabIndex = 17
-        Me.Checkmulti.Text = "multi"
-        Me.Checkmulti.UseVisualStyleBackColor = True
+        Me.txtdivi.Location = New System.Drawing.Point(145, 182)
+        Me.txtdivi.Name = "txtdivi"
+        Me.txtdivi.Size = New System.Drawing.Size(100, 20)
+        Me.txtdivi.TabIndex = 21
         '
-        'txtresultado
+        'btncalcular
         '
-        Me.txtresultado.Location = New System.Drawing.Point(145, 138)
-        Me.txtresultado.Name = "txtresultado"
-        Me.txtresultado.Size = New System.Drawing.Size(100, 20)
-        Me.txtresultado.TabIndex = 18
-        '
-        'txtraiz
-        '
-        Me.txtraiz.Location = New System.Drawing.Point(142, 187)
-        Me.txtraiz.Name = "txtraiz"
-        Me.txtraiz.Size = New System.Drawing.Size(100, 20)
-        Me.txtraiz.TabIndex = 19
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(163, 119)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(55, 13)
-        Me.Label7.TabIndex = 20
-        Me.Label7.Text = "Resultado"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(178, 168)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(28, 13)
-        Me.Label8.TabIndex = 21
-        Me.Label8.Text = "Raiz"
-        '
-        'txtpotencia
-        '
-        Me.txtpotencia.Location = New System.Drawing.Point(142, 231)
-        Me.txtpotencia.Name = "txtpotencia"
-        Me.txtpotencia.Size = New System.Drawing.Size(100, 20)
-        Me.txtpotencia.TabIndex = 22
+        Me.btncalcular.Location = New System.Drawing.Point(13, 230)
+        Me.btncalcular.Name = "btncalcular"
+        Me.btncalcular.Size = New System.Drawing.Size(75, 23)
+        Me.btncalcular.TabIndex = 22
+        Me.btncalcular.Text = "Calcular"
+        Me.btncalcular.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(279, 282)
-        Me.Controls.Add(Me.txtpotencia)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.txtraiz)
-        Me.Controls.Add(Me.txtresultado)
-        Me.Controls.Add(Me.Checkmulti)
-        Me.Controls.Add(Me.Checkdiv)
-        Me.Controls.Add(Me.checkresta)
-        Me.Controls.Add(Me.Checksuma)
+        Me.Controls.Add(Me.btncalcular)
+        Me.Controls.Add(Me.txtdivi)
+        Me.Controls.Add(Me.txtmulti)
+        Me.Controls.Add(Me.txtresta)
+        Me.Controls.Add(Me.txtsuma)
         Me.Controls.Add(Me.btlimpiar)
         Me.Controls.Add(Me.txtvalor2)
         Me.Controls.Add(Me.txtvalor1)
@@ -190,13 +140,9 @@ Partial Class Form1
     Friend WithEvents txtvalor1 As TextBox
     Friend WithEvents txtvalor2 As TextBox
     Friend WithEvents btlimpiar As Button
-    Friend WithEvents Checksuma As CheckBox
-    Friend WithEvents checkresta As CheckBox
-    Friend WithEvents Checkdiv As CheckBox
-    Friend WithEvents Checkmulti As CheckBox
-    Friend WithEvents txtresultado As TextBox
-    Friend WithEvents txtraiz As TextBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents txtpotencia As TextBox
+    Friend WithEvents txtsuma As TextBox
+    Friend WithEvents txtresta As TextBox
+    Friend WithEvents txtmulti As TextBox
+    Friend WithEvents txtdivi As TextBox
+    Friend WithEvents btncalcular As Button
 End Class
