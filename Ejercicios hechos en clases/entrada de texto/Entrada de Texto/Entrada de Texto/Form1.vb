@@ -28,4 +28,8 @@
             combodivision.Items.Add(valor & " / " & i & " = " & division)
         Next
     End Sub
+
+    Private Sub ErrorProviderToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ErrorProviderToolStripMenuItem.Click
+        Validaciones.show()
+    End Sub
 End Class
