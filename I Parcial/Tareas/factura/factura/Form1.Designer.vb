@@ -41,6 +41,8 @@ Partial Class Form1
         Me.btncalcular = New System.Windows.Forms.Button()
         Me.btnnuevo = New System.Windows.Forms.Button()
         Me.btnsalir = New System.Windows.Forms.Button()
+        Me.mascara = New System.Windows.Forms.MaskedTextBox()
+        Me.txtmask = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -211,12 +213,29 @@ Partial Class Form1
         Me.btnsalir.Text = "Salir"
         Me.btnsalir.UseVisualStyleBackColor = True
         '
+        'mascara
+        '
+        Me.mascara.Location = New System.Drawing.Point(215, 82)
+        Me.mascara.Mask = "000000000"
+        Me.mascara.Name = "mascara"
+        Me.mascara.Size = New System.Drawing.Size(100, 20)
+        Me.mascara.TabIndex = 19
+        '
+        'txtmask
+        '
+        Me.txtmask.Location = New System.Drawing.Point(225, 221)
+        Me.txtmask.Name = "txtmask"
+        Me.txtmask.Size = New System.Drawing.Size(100, 20)
+        Me.txtmask.TabIndex = 20
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightSeaGreen
         Me.ClientSize = New System.Drawing.Size(363, 450)
+        Me.Controls.Add(Me.txtmask)
+        Me.Controls.Add(Me.mascara)
         Me.Controls.Add(Me.btnsalir)
         Me.Controls.Add(Me.btnnuevo)
         Me.Controls.Add(Me.btncalcular)
@@ -262,4 +281,6 @@ Partial Class Form1
     Friend WithEvents btncalcular As Button
     Friend WithEvents btnnuevo As Button
     Friend WithEvents btnsalir As Button
+    Friend WithEvents mascara As MaskedTextBox
+    Friend WithEvents txtmask As TextBox
 End Class

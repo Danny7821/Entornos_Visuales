@@ -26,7 +26,11 @@
         ElseIf IsNumeric(txtcantidad.Text) Then
             cantidad = Val(txtcantidad.Text)
         End If
-
+        If mascara.MaskCompleted = False Then
+            MsgBox("No puede dejar espacio vacio")
+        Else
+            txtmask.Text = mascara.Text
+        End If
         descuento = Val(combodescuento.Text)
         subtotal = cantidad * punitario
         isv = Val(Comboisv.Text)

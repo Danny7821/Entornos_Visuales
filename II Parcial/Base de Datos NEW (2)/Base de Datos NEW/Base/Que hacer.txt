@@ -1,0 +1,13 @@
+La base de datos se tiene que pegar en esta direccion
+BaseEmpleados.bak
+
+C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\Backup
+
+Despues seguir los pasos que les indico con las imagenes.
+
+El otro documento es el Query(BASEORIGINAL) para ver los pasos en Sql Server
+Hay dos tablas, Empleados con 111 Ingresados
+
+Y Planes, con los planes de los telefonos
+
+Un procedimiento al final para mostrar una tabla combinada.
