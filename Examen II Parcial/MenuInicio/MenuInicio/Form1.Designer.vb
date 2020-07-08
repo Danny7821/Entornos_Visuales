@@ -30,6 +30,7 @@ Partial Class Form1
         Me.btnMaximizar = New System.Windows.Forms.Button()
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.PanelLateral = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnEmpleados = New System.Windows.Forms.Button()
@@ -38,7 +39,6 @@ Partial Class Form1
         Me.PanelForms = New System.Windows.Forms.Panel()
         Me.TimerMostrar = New System.Windows.Forms.Timer(Me.components)
         Me.TimerOcultar = New System.Windows.Forms.Timer(Me.components)
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.panelSuperior.SuspendLayout()
         Me.PanelLateral.SuspendLayout()
         CType(Me.btnMenu, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -139,6 +139,26 @@ Partial Class Form1
         Me.PanelLateral.Size = New System.Drawing.Size(165, 505)
         Me.PanelLateral.TabIndex = 2
         '
+        'Button2
+        '
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.Location = New System.Drawing.Point(-2, 273)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(165, 59)
+        Me.Button2.TabIndex = 8
+        Me.Button2.Text = "Reporte"
+        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Button1
         '
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
@@ -226,8 +246,9 @@ Partial Class Form1
         '
         'PanelForms
         '
-        Me.PanelForms.BackColor = System.Drawing.Color.Black
-        Me.PanelForms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PanelForms.BackColor = System.Drawing.Color.White
+        Me.PanelForms.BackgroundImage = Global.MenuInicio.My.Resources.Resources.messilogopng_350x
+        Me.PanelForms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.PanelForms.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelForms.Location = New System.Drawing.Point(165, 35)
         Me.PanelForms.Margin = New System.Windows.Forms.Padding(2)
@@ -240,26 +261,6 @@ Partial Class Form1
         '
         'TimerOcultar
         '
-        '
-        'Button2
-        '
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(-2, 273)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(165, 59)
-        Me.Button2.TabIndex = 8
-        Me.Button2.Text = "Reporte"
-        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'Form1
         '

@@ -22,65 +22,48 @@ Partial Class Reporte
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Reporte))
         Me.dtclientes = New System.Windows.Forms.DataGridView()
         Me.group = New System.Windows.Forms.GroupBox()
-        Me.btnbuscar = New System.Windows.Forms.PictureBox()
         CType(Me.dtclientes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.group.SuspendLayout()
-        CType(Me.btnbuscar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dtclientes
         '
         Me.dtclientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dtclientes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.dtclientes.Location = New System.Drawing.Point(6, 19)
+        Me.dtclientes.Location = New System.Drawing.Point(6, 31)
         Me.dtclientes.Name = "dtclientes"
-        Me.dtclientes.Size = New System.Drawing.Size(665, 263)
+        Me.dtclientes.Size = New System.Drawing.Size(650, 366)
         Me.dtclientes.TabIndex = 1
         '
         'group
         '
         Me.group.Controls.Add(Me.dtclientes)
-        Me.group.Location = New System.Drawing.Point(86, 157)
+        Me.group.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.group.Location = New System.Drawing.Point(117, 51)
         Me.group.Name = "group"
-        Me.group.Size = New System.Drawing.Size(681, 297)
+        Me.group.Size = New System.Drawing.Size(662, 403)
         Me.group.TabIndex = 2
         Me.group.TabStop = False
         Me.group.Text = "Reporte Clientes "
-        '
-        'btnbuscar
-        '
-        Me.btnbuscar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnbuscar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnbuscar.Image = CType(resources.GetObject("btnbuscar.Image"), System.Drawing.Image)
-        Me.btnbuscar.Location = New System.Drawing.Point(18, 11)
-        Me.btnbuscar.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnbuscar.Name = "btnbuscar"
-        Me.btnbuscar.Size = New System.Drawing.Size(69, 50)
-        Me.btnbuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btnbuscar.TabIndex = 22
-        Me.btnbuscar.TabStop = False
         '
         'Reporte
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(884, 466)
-        Me.Controls.Add(Me.btnbuscar)
         Me.Controls.Add(Me.group)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Reporte"
         Me.Text = "Reporte"
         CType(Me.dtclientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.group.ResumeLayout(False)
-        CType(Me.btnbuscar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents dtclientes As DataGridView
     Friend WithEvents group As GroupBox
-    Friend WithEvents btnbuscar As PictureBox
 End Class

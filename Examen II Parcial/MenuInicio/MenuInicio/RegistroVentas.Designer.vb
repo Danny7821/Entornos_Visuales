@@ -46,7 +46,6 @@ Partial Class RegistroVentas
         Me.btnguardar = New System.Windows.Forms.PictureBox()
         Me.btnmodificar = New System.Windows.Forms.PictureBox()
         Me.btnbuscar = New System.Windows.Forms.PictureBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dtsVentas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -56,12 +55,12 @@ Partial Class RegistroVentas
         CType(Me.btnguardar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnmodificar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnbuscar, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.dtsVentas)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(201, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(663, 393)
@@ -92,6 +91,7 @@ Partial Class RegistroVentas
         Me.GroupBox2.Controls.Add(Me.txtventacantidad)
         Me.GroupBox2.Controls.Add(Me.txtventaprecio)
         Me.GroupBox2.Controls.Add(Me.txtidventa)
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(3, 12)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(192, 393)
@@ -102,69 +102,69 @@ Partial Class RegistroVentas
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(12, 321)
+        Me.Label6.Location = New System.Drawing.Point(6, 321)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(64, 13)
+        Me.Label6.Size = New System.Drawing.Size(87, 18)
         Me.Label6.TabIndex = 28
         Me.Label6.Text = "ID Producto"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(12, 253)
+        Me.Label5.Location = New System.Drawing.Point(6, 253)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(53, 13)
+        Me.Label5.Size = New System.Drawing.Size(71, 18)
         Me.Label5.TabIndex = 27
         Me.Label5.Text = "ID Cliente"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(12, 189)
+        Me.Label4.Location = New System.Drawing.Point(6, 189)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(49, 13)
+        Me.Label4.Size = New System.Drawing.Size(66, 18)
         Me.Label4.TabIndex = 26
         Me.Label4.Text = "Cantidad"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 134)
+        Me.Label3.Location = New System.Drawing.Point(6, 134)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(37, 13)
+        Me.Label3.Size = New System.Drawing.Size(51, 18)
         Me.Label3.TabIndex = 25
         Me.Label3.Text = "Precio"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 81)
+        Me.Label2.Location = New System.Drawing.Point(6, 81)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(37, 13)
+        Me.Label2.Size = New System.Drawing.Size(49, 18)
         Me.Label2.TabIndex = 24
         Me.Label2.Text = "Fecha"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 34)
+        Me.Label1.Location = New System.Drawing.Point(6, 34)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(49, 13)
+        Me.Label1.Size = New System.Drawing.Size(63, 18)
         Me.Label1.TabIndex = 23
         Me.Label1.Text = "ID Venta"
         '
         'txtventaproducto
         '
-        Me.txtventaproducto.Location = New System.Drawing.Point(86, 318)
+        Me.txtventaproducto.Location = New System.Drawing.Point(99, 318)
         Me.txtventaproducto.Name = "txtventaproducto"
-        Me.txtventaproducto.Size = New System.Drawing.Size(100, 20)
+        Me.txtventaproducto.Size = New System.Drawing.Size(71, 24)
         Me.txtventaproducto.TabIndex = 22
         '
         'txtventaidcliente
         '
         Me.txtventaidcliente.Location = New System.Drawing.Point(86, 246)
         Me.txtventaidcliente.Name = "txtventaidcliente"
-        Me.txtventaidcliente.Size = New System.Drawing.Size(100, 20)
+        Me.txtventaidcliente.Size = New System.Drawing.Size(100, 24)
         Me.txtventaidcliente.TabIndex = 21
         '
         'Fechaventa
@@ -173,28 +173,28 @@ Partial Class RegistroVentas
         Me.Fechaventa.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.Fechaventa.Location = New System.Drawing.Point(86, 81)
         Me.Fechaventa.Name = "Fechaventa"
-        Me.Fechaventa.Size = New System.Drawing.Size(100, 20)
+        Me.Fechaventa.Size = New System.Drawing.Size(100, 24)
         Me.Fechaventa.TabIndex = 20
         '
         'txtventacantidad
         '
         Me.txtventacantidad.Location = New System.Drawing.Point(86, 189)
         Me.txtventacantidad.Name = "txtventacantidad"
-        Me.txtventacantidad.Size = New System.Drawing.Size(100, 20)
+        Me.txtventacantidad.Size = New System.Drawing.Size(100, 24)
         Me.txtventacantidad.TabIndex = 19
         '
         'txtventaprecio
         '
         Me.txtventaprecio.Location = New System.Drawing.Point(86, 134)
         Me.txtventaprecio.Name = "txtventaprecio"
-        Me.txtventaprecio.Size = New System.Drawing.Size(100, 20)
+        Me.txtventaprecio.Size = New System.Drawing.Size(100, 24)
         Me.txtventaprecio.TabIndex = 18
         '
         'txtidventa
         '
         Me.txtidventa.Location = New System.Drawing.Point(86, 31)
         Me.txtidventa.Name = "txtidventa"
-        Me.txtidventa.Size = New System.Drawing.Size(100, 20)
+        Me.txtidventa.Size = New System.Drawing.Size(100, 24)
         Me.txtidventa.TabIndex = 17
         '
         'ErrorValidacion
@@ -206,7 +206,7 @@ Partial Class RegistroVentas
         Me.btnlimpiar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnlimpiar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnlimpiar.Image = CType(resources.GetObject("btnlimpiar.Image"), System.Drawing.Image)
-        Me.btnlimpiar.Location = New System.Drawing.Point(226, 18)
+        Me.btnlimpiar.Location = New System.Drawing.Point(237, 433)
         Me.btnlimpiar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnlimpiar.Name = "btnlimpiar"
         Me.btnlimpiar.Size = New System.Drawing.Size(69, 52)
@@ -219,7 +219,7 @@ Partial Class RegistroVentas
         Me.btneliminar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btneliminar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btneliminar.Image = CType(resources.GetObject("btneliminar.Image"), System.Drawing.Image)
-        Me.btneliminar.Location = New System.Drawing.Point(299, 18)
+        Me.btneliminar.Location = New System.Drawing.Point(310, 433)
         Me.btneliminar.Margin = New System.Windows.Forms.Padding(2)
         Me.btneliminar.Name = "btneliminar"
         Me.btneliminar.Size = New System.Drawing.Size(69, 52)
@@ -232,7 +232,7 @@ Partial Class RegistroVentas
         Me.btnguardar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnguardar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnguardar.Image = CType(resources.GetObject("btnguardar.Image"), System.Drawing.Image)
-        Me.btnguardar.Location = New System.Drawing.Point(80, 20)
+        Me.btnguardar.Location = New System.Drawing.Point(91, 435)
         Me.btnguardar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnguardar.Name = "btnguardar"
         Me.btnguardar.Size = New System.Drawing.Size(69, 50)
@@ -245,7 +245,7 @@ Partial Class RegistroVentas
         Me.btnmodificar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnmodificar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnmodificar.Image = CType(resources.GetObject("btnmodificar.Image"), System.Drawing.Image)
-        Me.btnmodificar.Location = New System.Drawing.Point(153, 20)
+        Me.btnmodificar.Location = New System.Drawing.Point(164, 435)
         Me.btnmodificar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnmodificar.Name = "btnmodificar"
         Me.btnmodificar.Size = New System.Drawing.Size(69, 50)
@@ -258,7 +258,7 @@ Partial Class RegistroVentas
         Me.btnbuscar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnbuscar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnbuscar.Image = CType(resources.GetObject("btnbuscar.Image"), System.Drawing.Image)
-        Me.btnbuscar.Location = New System.Drawing.Point(7, 20)
+        Me.btnbuscar.Location = New System.Drawing.Point(18, 435)
         Me.btnbuscar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnbuscar.Name = "btnbuscar"
         Me.btnbuscar.Size = New System.Drawing.Size(69, 50)
@@ -266,29 +266,19 @@ Partial Class RegistroVentas
         Me.btnbuscar.TabIndex = 21
         Me.btnbuscar.TabStop = False
         '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.btnbuscar)
-        Me.GroupBox3.Controls.Add(Me.btnlimpiar)
-        Me.GroupBox3.Controls.Add(Me.btneliminar)
-        Me.GroupBox3.Controls.Add(Me.btnguardar)
-        Me.GroupBox3.Controls.Add(Me.btnmodificar)
-        Me.GroupBox3.Location = New System.Drawing.Point(15, 413)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(373, 80)
-        Me.GroupBox3.TabIndex = 22
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Comandos"
-        '
         'RegistroVentas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(846, 505)
-        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.btnbuscar)
+        Me.Controls.Add(Me.btnlimpiar)
         Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.btneliminar)
+        Me.Controls.Add(Me.btnguardar)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.btnmodificar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "RegistroVentas"
         Me.Text = "RegistroEmpleados"
@@ -302,7 +292,6 @@ Partial Class RegistroVentas
         CType(Me.btnguardar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnmodificar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnbuscar, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox3.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -329,5 +318,4 @@ Partial Class RegistroVentas
     Friend WithEvents btnguardar As PictureBox
     Friend WithEvents btnmodificar As PictureBox
     Friend WithEvents btnbuscar As PictureBox
-    Friend WithEvents GroupBox3 As GroupBox
 End Class

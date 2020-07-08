@@ -37,7 +37,6 @@ Partial Class Clientes
         Me.txtapellido = New System.Windows.Forms.TextBox()
         Me.txtnombre = New System.Windows.Forms.TextBox()
         Me.txtidcliente = New System.Windows.Forms.TextBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.btnbuscar = New System.Windows.Forms.PictureBox()
         Me.btnlimpiar = New System.Windows.Forms.PictureBox()
         Me.btneliminar = New System.Windows.Forms.PictureBox()
@@ -47,7 +46,6 @@ Partial Class Clientes
         CType(Me.dtclientes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ErrorValidacion2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox4.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
         CType(Me.btnbuscar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btneliminar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,6 +56,7 @@ Partial Class Clientes
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.dtclientes)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(417, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(450, 481)
@@ -88,9 +87,10 @@ Partial Class Clientes
         Me.GroupBox4.Controls.Add(Me.txtapellido)
         Me.GroupBox4.Controls.Add(Me.txtnombre)
         Me.GroupBox4.Controls.Add(Me.txtidcliente)
+        Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.Location = New System.Drawing.Point(21, 12)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(291, 244)
+        Me.GroupBox4.Size = New System.Drawing.Size(291, 326)
         Me.GroupBox4.TabIndex = 16
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Datos del Cliente"
@@ -98,27 +98,27 @@ Partial Class Clientes
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(24, 126)
+        Me.Label10.Location = New System.Drawing.Point(24, 222)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(52, 13)
+        Me.Label10.Size = New System.Drawing.Size(71, 18)
         Me.Label10.TabIndex = 32
         Me.Label10.Text = "Dirección"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(24, 95)
+        Me.Label9.Location = New System.Drawing.Point(24, 153)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(44, 13)
+        Me.Label9.Size = New System.Drawing.Size(59, 18)
         Me.Label9.TabIndex = 31
         Me.Label9.Text = "Apellido"
         '
         'Nombre
         '
         Me.Nombre.AutoSize = True
-        Me.Nombre.Location = New System.Drawing.Point(24, 63)
+        Me.Nombre.Location = New System.Drawing.Point(24, 88)
         Me.Nombre.Name = "Nombre"
-        Me.Nombre.Size = New System.Drawing.Size(44, 13)
+        Me.Nombre.Size = New System.Drawing.Size(62, 18)
         Me.Nombre.TabIndex = 30
         Me.Nombre.Text = "Nombre"
         '
@@ -127,13 +127,13 @@ Partial Class Clientes
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(24, 32)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(53, 13)
+        Me.Label7.Size = New System.Drawing.Size(71, 18)
         Me.Label7.TabIndex = 29
         Me.Label7.Text = "ID Cliente"
         '
         'txtdireccion
         '
-        Me.txtdireccion.Location = New System.Drawing.Point(98, 123)
+        Me.txtdireccion.Location = New System.Drawing.Point(98, 219)
         Me.txtdireccion.Multiline = True
         Me.txtdireccion.Name = "txtdireccion"
         Me.txtdireccion.Size = New System.Drawing.Size(169, 91)
@@ -141,45 +141,31 @@ Partial Class Clientes
         '
         'txtapellido
         '
-        Me.txtapellido.Location = New System.Drawing.Point(98, 93)
+        Me.txtapellido.Location = New System.Drawing.Point(98, 151)
         Me.txtapellido.Name = "txtapellido"
-        Me.txtapellido.Size = New System.Drawing.Size(169, 20)
+        Me.txtapellido.Size = New System.Drawing.Size(169, 24)
         Me.txtapellido.TabIndex = 13
         '
         'txtnombre
         '
-        Me.txtnombre.Location = New System.Drawing.Point(98, 60)
+        Me.txtnombre.Location = New System.Drawing.Point(98, 85)
         Me.txtnombre.Name = "txtnombre"
-        Me.txtnombre.Size = New System.Drawing.Size(169, 20)
+        Me.txtnombre.Size = New System.Drawing.Size(169, 24)
         Me.txtnombre.TabIndex = 12
         '
         'txtidcliente
         '
         Me.txtidcliente.Location = New System.Drawing.Point(98, 29)
         Me.txtidcliente.Name = "txtidcliente"
-        Me.txtidcliente.Size = New System.Drawing.Size(57, 20)
+        Me.txtidcliente.Size = New System.Drawing.Size(57, 24)
         Me.txtidcliente.TabIndex = 11
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.btnbuscar)
-        Me.GroupBox3.Controls.Add(Me.btnlimpiar)
-        Me.GroupBox3.Controls.Add(Me.btneliminar)
-        Me.GroupBox3.Controls.Add(Me.btnguardar)
-        Me.GroupBox3.Controls.Add(Me.btnmodificar)
-        Me.GroupBox3.Location = New System.Drawing.Point(19, 281)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(373, 80)
-        Me.GroupBox3.TabIndex = 23
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Comandos"
         '
         'btnbuscar
         '
         Me.btnbuscar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnbuscar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnbuscar.Image = CType(resources.GetObject("btnbuscar.Image"), System.Drawing.Image)
-        Me.btnbuscar.Location = New System.Drawing.Point(7, 20)
+        Me.btnbuscar.Location = New System.Drawing.Point(21, 372)
         Me.btnbuscar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnbuscar.Name = "btnbuscar"
         Me.btnbuscar.Size = New System.Drawing.Size(69, 50)
@@ -192,7 +178,7 @@ Partial Class Clientes
         Me.btnlimpiar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnlimpiar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnlimpiar.Image = CType(resources.GetObject("btnlimpiar.Image"), System.Drawing.Image)
-        Me.btnlimpiar.Location = New System.Drawing.Point(226, 18)
+        Me.btnlimpiar.Location = New System.Drawing.Point(240, 370)
         Me.btnlimpiar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnlimpiar.Name = "btnlimpiar"
         Me.btnlimpiar.Size = New System.Drawing.Size(69, 52)
@@ -205,7 +191,7 @@ Partial Class Clientes
         Me.btneliminar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btneliminar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btneliminar.Image = CType(resources.GetObject("btneliminar.Image"), System.Drawing.Image)
-        Me.btneliminar.Location = New System.Drawing.Point(299, 18)
+        Me.btneliminar.Location = New System.Drawing.Point(313, 370)
         Me.btneliminar.Margin = New System.Windows.Forms.Padding(2)
         Me.btneliminar.Name = "btneliminar"
         Me.btneliminar.Size = New System.Drawing.Size(69, 52)
@@ -218,7 +204,7 @@ Partial Class Clientes
         Me.btnguardar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnguardar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnguardar.Image = CType(resources.GetObject("btnguardar.Image"), System.Drawing.Image)
-        Me.btnguardar.Location = New System.Drawing.Point(80, 20)
+        Me.btnguardar.Location = New System.Drawing.Point(94, 372)
         Me.btnguardar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnguardar.Name = "btnguardar"
         Me.btnguardar.Size = New System.Drawing.Size(69, 50)
@@ -231,7 +217,7 @@ Partial Class Clientes
         Me.btnmodificar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnmodificar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnmodificar.Image = CType(resources.GetObject("btnmodificar.Image"), System.Drawing.Image)
-        Me.btnmodificar.Location = New System.Drawing.Point(153, 20)
+        Me.btnmodificar.Location = New System.Drawing.Point(167, 372)
         Me.btnmodificar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnmodificar.Name = "btnmodificar"
         Me.btnmodificar.Size = New System.Drawing.Size(69, 50)
@@ -243,10 +229,15 @@ Partial Class Clientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(900, 505)
-        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.btnbuscar)
+        Me.Controls.Add(Me.btnlimpiar)
+        Me.Controls.Add(Me.btneliminar)
         Me.Controls.Add(Me.GroupBox4)
+        Me.Controls.Add(Me.btnguardar)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.btnmodificar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Clientes"
         Me.Text = "solicitud"
@@ -255,7 +246,6 @@ Partial Class Clientes
         CType(Me.ErrorValidacion2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
         CType(Me.btnbuscar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btneliminar, System.ComponentModel.ISupportInitialize).EndInit()
@@ -277,7 +267,6 @@ Partial Class Clientes
     Friend WithEvents txtapellido As TextBox
     Friend WithEvents txtnombre As TextBox
     Friend WithEvents txtidcliente As TextBox
-    Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents btnbuscar As PictureBox
     Friend WithEvents btnlimpiar As PictureBox
     Friend WithEvents btneliminar As PictureBox

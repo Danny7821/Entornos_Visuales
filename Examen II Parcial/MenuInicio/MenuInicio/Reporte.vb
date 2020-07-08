@@ -26,7 +26,7 @@ Public Class Reporte
         mostrarclientereporte()
     End Sub
 
-    Private Sub btnbuscar_Click(sender As Object, e As EventArgs) Handles btnbuscar.Click
+    Private Sub btnbuscar_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class

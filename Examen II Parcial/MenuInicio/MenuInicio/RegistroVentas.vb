@@ -102,21 +102,11 @@ Public Class RegistroVentas
 
     Private Sub btnBuscarRegistro_Click(sender As Object, e As EventArgs)
         mostrarBusqueda()
-        Dim valor As Int16
         If txtventaidcliente.Text = "" Then
             MsgBox("Escriba un numero en la casilla", vbInformation)
         ElseIf Not IsNumeric(txtventaidcliente.Text) Then
             MsgBox("Ingrese un valor numerico", vbInformation)
             txtventaidcliente.Text = ""
-        ElseIf IsNumeric(valor) Then
-            valor = Val(txtventaidcliente.Text)
-            If valor = 0 Then
-                MsgBox("Ingrese una edad valida", vbInformation)
-            ElseIf valor < 1 Then
-                MsgBox("Ingrese una edad valida", vbInformation)
-            ElseIf valor > 100 Then
-                MsgBox("Ingrese una edad valida entre 1 y 100", vbInformation)
-            End If
         End If
     End Sub
 

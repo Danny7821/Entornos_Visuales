@@ -51,9 +51,9 @@ Partial Class Productoingreso
         '
         Me.dtsproductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dtsproductos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.dtsproductos.Location = New System.Drawing.Point(310, 19)
+        Me.dtsproductos.Location = New System.Drawing.Point(337, 19)
         Me.dtsproductos.Name = "dtsproductos"
-        Me.dtsproductos.Size = New System.Drawing.Size(344, 427)
+        Me.dtsproductos.Size = New System.Drawing.Size(357, 427)
         Me.dtsproductos.TabIndex = 0
         '
         'GroupBox1
@@ -72,6 +72,7 @@ Partial Class Productoingreso
         Me.GroupBox1.Controls.Add(Me.txtnombreproducto)
         Me.GroupBox1.Controls.Add(Me.txtIdProducto)
         Me.GroupBox1.Controls.Add(Me.dtsproductos)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(12, 23)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(876, 452)
@@ -82,9 +83,9 @@ Partial Class Productoingreso
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(89, 349)
+        Me.Label4.Location = New System.Drawing.Point(89, 344)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(86, 13)
+        Me.Label4.Size = New System.Drawing.Size(120, 18)
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "Buscar Producto"
         '
@@ -92,7 +93,7 @@ Partial Class Productoingreso
         '
         Me.txtbuscarproducto.Location = New System.Drawing.Point(92, 365)
         Me.txtbuscarproducto.Name = "txtbuscarproducto"
-        Me.txtbuscarproducto.Size = New System.Drawing.Size(171, 20)
+        Me.txtbuscarproducto.Size = New System.Drawing.Size(171, 24)
         Me.txtbuscarproducto.TabIndex = 12
         '
         'btnlimpiar
@@ -100,7 +101,7 @@ Partial Class Productoingreso
         Me.btnlimpiar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnlimpiar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnlimpiar.Image = CType(resources.GetObject("btnlimpiar.Image"), System.Drawing.Image)
-        Me.btnlimpiar.Location = New System.Drawing.Point(708, 277)
+        Me.btnlimpiar.Location = New System.Drawing.Point(745, 269)
         Me.btnlimpiar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnlimpiar.Name = "btnlimpiar"
         Me.btnlimpiar.Size = New System.Drawing.Size(69, 70)
@@ -113,7 +114,7 @@ Partial Class Productoingreso
         Me.btneliminar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btneliminar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btneliminar.Image = CType(resources.GetObject("btneliminar.Image"), System.Drawing.Image)
-        Me.btneliminar.Location = New System.Drawing.Point(708, 195)
+        Me.btneliminar.Location = New System.Drawing.Point(745, 187)
         Me.btneliminar.Margin = New System.Windows.Forms.Padding(2)
         Me.btneliminar.Name = "btneliminar"
         Me.btneliminar.Size = New System.Drawing.Size(69, 61)
@@ -139,7 +140,7 @@ Partial Class Productoingreso
         Me.btnguardar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnguardar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnguardar.Image = CType(resources.GetObject("btnguardar.Image"), System.Drawing.Image)
-        Me.btnguardar.Location = New System.Drawing.Point(708, 27)
+        Me.btnguardar.Location = New System.Drawing.Point(745, 19)
         Me.btnguardar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnguardar.Name = "btnguardar"
         Me.btnguardar.Size = New System.Drawing.Size(69, 61)
@@ -152,7 +153,7 @@ Partial Class Productoingreso
         Me.btnmodificar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnmodificar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnmodificar.Image = CType(resources.GetObject("btnmodificar.Image"), System.Drawing.Image)
-        Me.btnmodificar.Location = New System.Drawing.Point(708, 109)
+        Me.btnmodificar.Location = New System.Drawing.Point(745, 101)
         Me.btnmodificar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnmodificar.Name = "btnmodificar"
         Me.btnmodificar.Size = New System.Drawing.Size(69, 61)
@@ -165,7 +166,7 @@ Partial Class Productoingreso
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(3, 150)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(63, 13)
+        Me.Label3.Size = New System.Drawing.Size(87, 18)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Descripcion"
         '
@@ -174,7 +175,7 @@ Partial Class Productoingreso
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(7, 109)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(105, 13)
+        Me.Label2.Size = New System.Drawing.Size(147, 18)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Nombre de Producto"
         '
@@ -183,13 +184,13 @@ Partial Class Productoingreso
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(6, 71)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(64, 13)
+        Me.Label1.Size = New System.Drawing.Size(87, 18)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "ID Producto"
         '
         'txtdescripcion
         '
-        Me.txtdescripcion.Location = New System.Drawing.Point(118, 147)
+        Me.txtdescripcion.Location = New System.Drawing.Point(99, 147)
         Me.txtdescripcion.Multiline = True
         Me.txtdescripcion.Name = "txtdescripcion"
         Me.txtdescripcion.Size = New System.Drawing.Size(145, 109)
@@ -197,23 +198,23 @@ Partial Class Productoingreso
         '
         'txtnombreproducto
         '
-        Me.txtnombreproducto.Location = New System.Drawing.Point(118, 106)
+        Me.txtnombreproducto.Location = New System.Drawing.Point(160, 106)
         Me.txtnombreproducto.Name = "txtnombreproducto"
-        Me.txtnombreproducto.Size = New System.Drawing.Size(145, 20)
+        Me.txtnombreproducto.Size = New System.Drawing.Size(144, 24)
         Me.txtnombreproducto.TabIndex = 2
         '
         'txtIdProducto
         '
-        Me.txtIdProducto.Location = New System.Drawing.Point(118, 68)
+        Me.txtIdProducto.Location = New System.Drawing.Point(99, 71)
         Me.txtIdProducto.Name = "txtIdProducto"
-        Me.txtIdProducto.Size = New System.Drawing.Size(75, 20)
+        Me.txtIdProducto.Size = New System.Drawing.Size(75, 24)
         Me.txtIdProducto.TabIndex = 1
         '
         'Productoingreso
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Teal
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(907, 505)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
