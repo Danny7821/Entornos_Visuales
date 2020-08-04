@@ -205,7 +205,7 @@ Partial Class Form1
         Me.btnEmpleados.Location = New System.Drawing.Point(-2, 106)
         Me.btnEmpleados.Margin = New System.Windows.Forms.Padding(2)
         Me.btnEmpleados.Name = "btnEmpleados"
-        Me.btnEmpleados.Size = New System.Drawing.Size(165, 61)
+        Me.btnEmpleados.Size = New System.Drawing.Size(165, 60)
         Me.btnEmpleados.TabIndex = 3
         Me.btnEmpleados.Text = "Ventas"
         Me.btnEmpleados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
